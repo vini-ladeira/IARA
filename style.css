@@ -66,20 +66,6 @@ a {
     animation-delay: 0s;
     background-color: aquamarine;
 }
-/*
-.container section:nth-child(2)
-{
-    background-color: rosybrown;
-}
-.container section:nth-child(3)
-{
-    background-color: royalblue;
-}
-.container section:nth-child(4)
-{
-    background-color: salmon;
-}
-*/
 
 .sec1 {
     width: 100vw;
