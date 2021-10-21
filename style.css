@@ -22,6 +22,7 @@ a {
     position: fixed;
     display: flex;
     padding: 2em 4em;
+    z-index: 999999;
 }
 .menu .itens-menu {
     position: fixed;
@@ -77,23 +78,23 @@ a {
     background-color: salmon;
 }
 
-.container section .content
+.sec1
 {
     max-width: 800px;
     padding: 40px;
     text-align: center;
 }
-.container section .content h1
+.sec1 h1
 {
     font-size: 4em;
     color: black;
 }
-.container section .content h2
+.sec1 h2
 {
     font-size: 2em;
     color: black;
 }
-.container section .content p
+.sec1 p
 {
     font-size: 1.3em;
     line-height: 1.4em;
