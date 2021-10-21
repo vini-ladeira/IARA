@@ -64,7 +64,9 @@ a {
     z-index: 1000;
     opacity: 1;
     animation-delay: 0s;
+    background-color: aquamarine;
 }
+/*
 .container section:nth-child(2)
 {
     background-color: rosybrown;
@@ -77,29 +79,39 @@ a {
 {
     background-color: salmon;
 }
+*/
 
-.sec1
-{
-    max-width: 800px;
-    padding: 40px;
-    text-align: center;
+.sec1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8em;
 }
-.sec1 h1
+.sec1 .conteudo {
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    z-index: 10;
+}
+.sec1 .conteudo h1
 {
     font-size: 4em;
     color: black;
 }
-.sec1 h2
+.sec1 .conteudo h2
 {
     font-size: 2em;
     color: black;
 }
-.sec1 p
+.sec1 .conteudo p
 {
     font-size: 1.3em;
     line-height: 1.4em;
     color: black;
 }
+
 @keyframes animate
 {
     0%
