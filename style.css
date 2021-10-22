@@ -38,7 +38,7 @@ a {
     align-items: center;
 }
 /* Fim do menu */
-
+/* Início da formatação das páginas*/
 .container
 {
     top:0;
@@ -60,13 +60,12 @@ a {
     background-size: 1300px 700px;
     background-position-y: bottom;
     background-repeat: repeat-x;
-    animation: animate 60s linear infinite;
     z-index: 1000;
     opacity: 1;
-    animation-delay: 0s;
     background-color: aquamarine;
+    animation: animate 60s linear infinite;
+    animation-delay: 0s;
 }
-
 .sec1 {
     width: 100vw;
     height: 100vh;
@@ -81,23 +80,84 @@ a {
     text-align: center;
     z-index: 10;
 }
+.sec1 .conteudo .logo {
+    width: 400px;
+    height: 300px;
+    animation: logoreveal 1s linear;
+    animation-delay: 0s;
+}
 .sec1 .conteudo h1
 {
-    font-size: 4em;
+    font-size: 3em;
+    color: black;
+    animation: logoreveal 1s linear;
+    animation-delay: 0.2s;
+    animation-fill-mode: backwards;
+}
+.sec2 .conteudo2 {
+
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    z-index: 10;
+}
+.sec2 .conteudo2 p
+{
+    font-size: 1em;
     color: black;
 }
-.sec1 .conteudo h2
+.sec2 .conteudo2 h2
 {
-    font-size: 2em;
+    font-size: 3em;
     color: black;
 }
-.sec1 .conteudo p
+.sec2 .conteudo2 .quemsomosimg
 {
-    font-size: 1.3em;
-    line-height: 1.4em;
+    width: 30%;
+    height: 30%;
+}
+.sec3 .conteudo3 {
+
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    z-index: 10;
+}
+.sec3 .conteudo3 p
+{
+    font-size: 1em;
+    color: black;
+}
+.sec3 .conteudo3 h2
+{
+    font-size: 3em;
+    color: black;
+}
+.sec4 .conteudo4 {
+
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: center;
+    z-index: 10;
+}
+.sec3 .conteudo3 .fazemosimg
+{
+    width: 50%;
+    height: 50%;
+}
+.sec4 .conteudo4 p
+{
+    font-size: 1em;
+    color: black;
+}
+.sec4 .conteudo4 h2
+{
+    font-size: 3em;
     color: black;
 }
 
+/* Final da formatação das páginas*/
+/* Início das animações */
 @keyframes animate
 {
     0%
@@ -108,4 +168,30 @@ a {
     {
         background-position-x: 1000px;
     }
+}
+@keyframes logoreveal
+{
+    0%
+    { 
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+/* Final das animações*/
+
+@media (max-width: 991px) {
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    transform: none !important;
+    overflow-y: hidden;
+}
+.container section {
+    background-size: 80%;
+}
 }
